@@ -46,6 +46,76 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .portrait::after{content:"";position:absolute;inset:-13px;border:1.5px solid var(--rose);border-radius:999px 999px 36px 36px;opacity:.5;pointer-events:none}
 @media(min-width:760px){.welcome{display:grid;grid-template-columns:minmax(250px,5fr) 6fr;gap:clamp(34px,6vw,64px);align-items:center;text-align:left;padding:clamp(40px,6vw,64px)}.portrait{width:100%;max-width:340px;margin:0 0 0 12px}.nm .f,.nm .l{font-size:clamp(2.8rem,5.8vw,4.8rem)}.nm .m{padding-left:0;letter-spacing:.6em}.orn{justify-content:flex-start}.welcome .line{margin-left:0}}
 .bk p{max-width:780px}.bk ul,.bk ol{color:var(--muted);padding-left:20px;max-width:780px;margin:6px 0 14px}.bk li{margin:3px 0}.bk h3.grp{margin-top:34px}.formula{background:var(--blush);border-radius:10px;padding:8px 12px;font-size:.88rem;margin:6px 0 14px;max-width:780px}.bk .lbl{font-weight:700;color:var(--accent)}.srcs{font-size:.82rem;color:var(--muted)}
+.bw{--a1:var(--accent);--a2:var(--rose);--a3:var(--blush);--a4:var(--line);--hero:#7A1F3D}
+.flt{animation:flt 6s ease-in-out infinite}.flt.d1{animation-delay:-1.5s}.flt.d2{animation-delay:-3s}.flt.d3{animation-delay:-4.5s}.flt.s{animation-duration:7.5s}
+@keyframes flt{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(.4deg)}}
+@media(prefers-reduced-motion:reduce){.flt{animation:none}}
+.bhero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--hero),#a8355f);color:#fff;border-radius:26px;padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center}
+.bhero::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 70%)}
+.bhero h2{color:#fff;font-size:clamp(1.7rem,5vw,2.6rem)}
+.bhero p{color:#fbe9ee;margin:12px 0}
+.bhero .kick{letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;color:#f9dce4;font-weight:700}
+.bchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.bchips span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:5px 12px;border-radius:99px;font-size:.8rem}
+.fstack{display:grid;gap:14px;position:relative;z-index:1}
+.fc{background:#fff;color:#3a1522;border-radius:18px;padding:16px 18px;box-shadow:0 16px 36px rgba(0,0,0,.28)}
+.fc b{display:block;font-family:Georgia,serif;font-size:1.9rem;color:#7A1F3D;line-height:1.1}.fc span{font-size:.82rem;color:#7d5563}
+@media(max-width:700px){.bhero{grid-template-columns:1fr}}
+.bw .box{background:var(--a3);border:1px solid var(--a4);border-radius:20px;padding:clamp(18px,4vw,28px);margin:16px 0}
+.bw .box h3{color:var(--a1);margin-bottom:6px}
+.bw .box p,.bw .box li{color:var(--text)}
+.bw .box ul{padding-left:20px;margin:6px 0}
+.bw .gh{color:var(--a1);font-size:1.4rem;margin:34px 0 10px;font-family:Georgia,serif;border-bottom:1px solid var(--a4);padding-bottom:6px}
+.bgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:12px 0}
+.bg2{background:var(--surface);border:1px solid var(--a4);border-radius:18px;padding:18px;box-shadow:0 10px 26px rgba(122,31,61,.14)}
+.bg2 b{display:block;font-family:Georgia,serif;font-size:1.7rem;color:var(--a1)}.bg2 span{color:var(--muted);font-size:.88rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.st{background:var(--surface);border:1px solid var(--a4);border-left:4px solid var(--a2);border-radius:14px;padding:14px 16px}
+.st i{font-style:normal;font-weight:700;color:var(--a2);font-size:.75rem;letter-spacing:.08em}.st h4{margin:2px 0 4px;color:var(--a1)}.st p{margin:0;font-size:.9rem;color:var(--muted)}
+.app{margin:26px 0;text-align:center}
+.go{display:inline-block;margin-top:10px;background:var(--accent);color:var(--accent-ink);padding:14px 30px;border-radius:99px;font-weight:700;text-decoration:none;box-shadow:0 14px 30px rgba(122,31,61,.35)}
+.tools3{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:16px;margin:8px 0 24px}
+.tl{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px 12px;text-align:center;box-shadow:0 14px 30px rgba(122,31,61,.14)}
+.tl svg{width:44px;height:44px;display:block;margin:0 auto 10px}.tl b{font-size:.92rem;color:var(--text)}
+.built{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:10px}
+.built a.bc{display:block;text-decoration:none;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 14px 30px rgba(122,31,61,.12)}
+.built .bc b{color:var(--accent);font-family:Georgia,serif;font-size:1.15rem;display:block;margin-bottom:4px}.built .bc span{color:var(--muted);font-size:.9rem}
+.bcard{position:relative;margin-top:18px;border-radius:24px;padding:clamp(20px,4vw,34px);background:linear-gradient(135deg,#7A1F3D,#a8355f);color:#fff;overflow:hidden}
+.bcard h3{color:#fff;font-size:1.55rem;margin-bottom:8px}.bcard p{color:#fbe9ee}
+.bcard .tag{background:rgba(255,255,255,.14);color:#fff}
+.bcard .mini{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}
+.bcard .mini div{background:#fff;color:#3a1522;border-radius:14px;padding:10px 16px;box-shadow:0 12px 26px rgba(0,0,0,.25)}
+.bcard .mini b{display:block;font-family:Georgia,serif;font-size:1.35rem;color:#7A1F3D}.bcard .mini span{font-size:.75rem;color:#7d5563}
+.bcard .btn{background:#fff;color:#7A1F3D}.bcard .btn.s{background:transparent;color:#fff;border-color:#fff}
+.stage{position:relative;margin:10px 0 30px;padding:clamp(28px,6vw,60px) clamp(14px,4vw,44px);border-radius:32px;background:radial-gradient(ellipse at 50% 0,#a8355f 0,#7A1F3D 45%,#4b1226 100%);color:#fff;text-align:center;overflow:hidden;animation:enter .9s cubic-bezier(.2,.8,.2,1)}
+@keyframes enter{from{opacity:0;transform:translateY(34px) scale(.95)}to{opacity:1;transform:none}}
+.stage::before{content:"";position:absolute;inset:-50%;background:conic-gradient(from 0deg,transparent 0,rgba(249,220,228,.2) 12%,transparent 30%);animation:spin 16s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stage>*{position:relative;z-index:1}
+.live{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 16px;border-radius:99px;font-size:.74rem;letter-spacing:.16em;font-weight:700}
+.live i{width:9px;height:9px;border-radius:50%;background:#7CFFB2;animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(124,255,178,.7)}70%{box-shadow:0 0 0 12px rgba(124,255,178,0)}100%{box-shadow:0 0 0 0 rgba(124,255,178,0)}}
+.stage h2{color:#fff;font-size:clamp(1.9rem,6.6vw,3.5rem);margin:18px auto 12px;max-width:780px;line-height:1.1}
+.stage .lead{color:#fbe9ee;max-width:580px;margin:0 auto 30px;font-size:1.05rem}
+.device{position:relative;max-width:660px;margin:0 auto 30px}
+.device .scr{background:#fff;color:#3a1522;border-radius:18px;box-shadow:0 44px 90px rgba(0,0,0,.5),0 0 0 9px rgba(255,255,255,.1);overflow:hidden;text-align:left}
+.device .tb{display:flex;align-items:center;gap:6px;padding:11px 16px;background:#f9dce4;border-bottom:1px solid #f0cdd8}
+.device .tb i{width:10px;height:10px;border-radius:50%;background:#c4587a;opacity:.7}.device .tb em{font-style:normal;margin-left:10px;font-size:.78rem;color:#7d5563}
+.device .bd{padding:24px;min-height:250px}.device h3{color:#7A1F3D;font-size:1.3rem}
+.prob{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.prob div{border-radius:12px;padding:13px 14px;background:#fceef2;font-size:.86rem;font-weight:600;color:#4a2231;border:1px solid #f0cdd8;animation:lit 8s infinite}
+.prob div:nth-child(2){animation-delay:2s}.prob div:nth-child(3){animation-delay:4s}.prob div:nth-child(4){animation-delay:6s}
+@keyframes lit{0%,22%{background:#7A1F3D;color:#fff;transform:scale(1.04)}28%,100%{background:#fceef2;color:#4a2231;transform:none}}
+.pv{display:inline-block;margin-top:16px;background:#7A1F3D;color:#fff;border:0;padding:10px 20px;border-radius:99px;font-weight:700;cursor:pointer;font-size:.88rem}
+.orb{position:absolute;background:#fff;color:#7A1F3D;border-radius:99px;padding:8px 16px;font-weight:700;font-size:.78rem;box-shadow:0 14px 30px rgba(0,0,0,.3);white-space:nowrap}
+.orb.o1{left:-112px;top:14%}.orb.o2{right:-112px;top:32%}.orb.o3{left:-96px;bottom:22%}.orb.o4{right:-104px;bottom:8%}
+@media(max-width:1000px){.orb{display:none}}
+.cta{display:inline-block;background:#fff;color:#7A1F3D;padding:17px 38px;border-radius:99px;font-weight:800;font-size:1.08rem;text-decoration:none;animation:glow 2.4s infinite}
+@keyframes glow{0%{box-shadow:0 0 0 0 rgba(255,255,255,.65),0 18px 40px rgba(0,0,0,.35)}70%{box-shadow:0 0 0 22px rgba(255,255,255,0),0 18px 40px rgba(0,0,0,.35)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0),0 18px 40px rgba(0,0,0,.35)}}
+.built2{margin-top:18px;font-size:.8rem;color:#f9dce4;letter-spacing:.04em}
+.showcase{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:10px}
+.vk{display:block;text-decoration:none;color:#fff;background:linear-gradient(135deg,#7A1F3D,#a8355f);border-radius:22px;padding:24px;box-shadow:0 20px 44px rgba(122,31,61,.35)}
+.vk b{font-family:Georgia,serif;font-size:1.35rem;display:block;margin:8px 0 4px}.vk span{color:#fbe9ee;font-size:.92rem;display:block}.vk .tag{background:rgba(255,255,255,.18);color:#fff;display:inline-block;margin:0;width:auto}
+.vk em{font-style:normal;font-weight:700;display:inline-block;margin-top:14px;background:#fff;color:#7A1F3D;padding:8px 18px;border-radius:99px;font-size:.85rem}
 .photo{width:clamp(150px,36vw,210px);aspect-ratio:1;border-radius:50%;background:var(--photo) center/cover no-repeat,var(--blush);border:4px solid var(--surface);box-shadow:0 0 0 1.5px var(--accent),0 14px 34px rgba(122,31,61,.25);margin:0 auto 26px}
 .photo.sm{width:140px;margin:0 0 22px}
 .welcome::before{content:"";position:absolute;inset:10px;border:1px solid var(--rose);border-radius:20px;opacity:.35;pointer-events:none}
@@ -153,12 +223,19 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 30px}
 <a class="tile" href="#academic"><b>Academic</b><span>Education background</span></a>
 <a class="tile" href="#tools"><b>Tools</b><span>Platforms I work with</span></a>
 </div>
+<div style="margin-top:34px"><h3 class="grp">Things I’ve built</h3>
+<div class="showcase">
+<a class="vk flt" href="https://www.vikanns.com" target="_blank" rel="noopener"><span class="tag">Website I built</span><b>www.Vikanns.com</b><span>The website I built for Vikanns, where I work as Customer Retention Manager.</span><em>Visit the website →</em></a>
+<a class="vk flt d1" href="https://brigtwed.netlify.app/" target="_blank" rel="noopener"><span class="tag">Live app I built</span><b>Brightwell Premium Plan Simulation</b><span>Let me walk you through the live app I built to solve a case study.</span><em>Launch the live app →</em></a>
+</div>
+</div>
 </section>
 
 <section class="view" data-view="about">
 <h2 class="pg">About Me</h2>
 <div class="photo sm" role="img" aria-label="Portrait of Annastasia Ogochukwu Awoke"></div>
 <div style="max-width:740px">
+<p><strong>I am a Technical Account Manager.</strong> I combine customer success with hands-on technical skills: I understand the product, the data and the systems behind a customer’s problem, and I build the tools that solve it, from a live app that simulates a plan upgrade to the website for Vikanns.</p>
 <p>I am a Customer Success professional who believes that customer retention is one of the strongest drivers of sustainable business growth.</p>
 <p>My focus is on helping businesses build lasting customer relationships, reduce churn, improve customer engagement, and increase recurring revenue by ensuring customers consistently experience value from the products and services they use.</p>
 <p>With experience managing over 70 clients and successfully onboarding 58, I understand the importance of creating a seamless customer journey, from the first interaction and onboarding to ongoing engagement, issue resolution and long-term retention.</p>
@@ -166,6 +243,11 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 30px}
 <p>What I bring to the table is a proactive, customer-first approach backed by a strong understanding of business outcomes.</p>
 <p>I work to reduce churn by identifying early signs of customer dissatisfaction, maintaining consistent communication, addressing challenges before they escalate, and helping customers achieve their desired outcomes. I also look for opportunities to increase recurring revenue through stronger product or service adoption, customer loyalty, renewals, upselling and cross-selling where appropriate.</p>
 <p>I combine empathy, relationship management, problem-solving and process improvement with CRM tools and structured follow-up systems to ensure that customer needs are not overlooked and opportunities for better engagement are not missed.</p>
+</div>
+<h3 class="grp">Things I’ve built</h3>
+<div class="showcase">
+<a class="vk flt" href="https://www.vikanns.com" target="_blank" rel="noopener"><span class="tag">Website I built</span><b>www.Vikanns.com</b><span>The website I built for Vikanns, where I work as Customer Retention Manager.</span><em>Visit the website →</em></a>
+<a class="vk flt d1" href="https://brigtwed.netlify.app/" target="_blank" rel="noopener"><span class="tag">Live app I built</span><b>Brightwell Premium Plan Simulation</b><span>Let me walk you through the live app I built to solve a case study.</span><em>Launch the live app →</em></a>
 </div>
 <h3 class="grp">How I contribute to business growth</h3>
 <div class="grid" style="margin-top:0">
@@ -186,7 +268,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 30px}
 <div class="kpi"><b>70+</b><span>clients managed</span></div>
 <div class="kpi"><b>58</b><span>clients onboarded</span></div>
 <div class="kpi"><b>15%</b><span>faster average resolution time</span></div>
-<div class="kpi"><b>3</b><span>customer success case studies</span></div>
+<div class="kpi"><b>4</b><span>customer success case studies</span></div>
 </div>
 <div class="panel"><h3>Akwete Pay · Why merchants went inactive</h3><p class="note">Share of 40 interviewed merchants (from 312 inactive) citing each reason</p>
 <div class="bar2"><span>Late settlement</span><div class="trk"><i style="width:45%"></i></div><em>45%</em></div>
@@ -207,12 +289,20 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 30px}
 <div><b>BukkiBooks</b><span>Adoption &amp; early warning</span><span>A key feature unused for 5 weeks caught by usage signals</span></div>
 <div><b>Akwete Pay</b><span>Retention &amp; recovery</span><span>312 inactive merchants; goal to reactivate 25% in 30 days</span></div>
 <div><b>Sunrise Digital MFB</b><span>Customer experience review</span><span>12% 30-day activation; one connected plan for the Board</span></div>
+<div><b>Brightwell × Cedar Valley</b><span>Account expansion</span><span>+$135,000 ARR uplift; live app built to prove the value</span></div>
 </div></div>
 </section>
 
 <section class="view" data-view="projects">
 <h2 class="pg">My Projects</h2>
 <p class="sub">Case work that shows how I think about adoption, retention and scalable customer success.</p>
+<article class="bcard">
+<span class="tag">Case study 4 · Live app</span>
+<h3>Brightwell Learning × Cedar Valley Health</h3>
+<p>A healthy hospital customer had outgrown its plan, and finance had rejected the last upsell. I built the business case in Cedar Valley’s own numbers, planned who to take it to and when, and built a live app that shows the Premium plan solving the problems in real time.</p>
+<div class="mini"><div class="flt"><b>+$135,000</b><span>ARR uplift</span></div><div class="flt d1"><b>156.25%</b><span>NRR with Premium</span></div><div class="flt d2"><b>1 Jan</b><span>upgrade date</span></div></div>
+<a class="btn" href="#brightwell">Let me walk you through it</a> <a class="btn s" href="https://brigtwed.netlify.app/" target="_blank" rel="noopener">Launch the live app</a>
+</article>
 <article class="feature">
 <span class="tag">Featured case study</span>
 <h3>BukkiBooks: an early-warning system for at-risk customers</h3>
@@ -254,6 +344,71 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 30px}
 <div class="quote">Onboarding affects activation. Reliability affects trust. Service recovery decides whether damaged trust can be restored.</div>
 <p><strong>Recommendations to the Board:</strong> fix transaction reliability and communication first, redesign onboarding around recovery, clarity and confirmation, and establish one owned Voice of the Customer process, delivered in a four-phase roadmap with named owners.</p>
 </article>
+</section>
+
+<section class="view bw" data-view="brightwell">
+<p><a class="btn s" href="#projects">← Back to projects</a></p>
+<div class="stage">
+<span class="live"><i></i>LIVE APP</span>
+<h2>Let me walk you through the live app I built to solve this case study</h2>
+<p class="lead">The Brightwell Premium Plan Simulation shows Cedar Valley’s four problems and how Premium answers each one, in real time. I built it. Try it yourself.</p>
+<div class="device flt s">
+<span class="orb o1 flt">Certificate tracking</span><span class="orb o2 flt d1">Automatic reports</span><span class="orb o3 flt d2">Single sign-on</span><span class="orb o4 flt d3">Advanced analytics</span>
+<div class="scr"><div class="tb"><i></i><i></i><i></i><em>brigtwed.netlify.app</em></div>
+<div class="bd"><div id="pvbox"><h3>Brightwell Premium Plan Simulation</h3>
+<p style="margin:6px 0 0;color:#7d5563">Four problems. Four answers. Watch each one light up, then step inside.</p>
+<div class="prob"><div>1 · Certificate tracking</div><div>2 · Automatic reports</div><div>3 · Single sign-on</div><div>4 · Advanced analytics</div></div>
+<button class="pv" onclick="loadApp(this)">Preview it right here</button></div></div></div></div>
+<a class="cta" href="https://brigtwed.netlify.app/" target="_blank" rel="noopener">Launch the live app →</a>
+<div class="built2">Built and deployed with Supabase · Netlify · GitHub</div>
+</div>
+<div class="bhero">
+<div><div class="kick">Customer Success · Account expansion</div>
+<h2>Brightwell Learning × Cedar Valley Health</h2>
+<p>Training 5,000 people without buying 5,000 licences. My plan to grow a healthy account the right way, with a business case finance can say yes to.</p>
+<div class="bchips"><span>14 hospitals</span><span>3,600 clinical staff</span><span>2,500 Standard seats</span><span>$240,000 a year</span><span>Renews 1 March 2027</span></div></div>
+<div class="fstack"><div class="fc flt"><b>+$135,000</b><span>ARR uplift from upgrading 2,500 seats</span></div><div class="fc flt d1"><b>156.25%</b><span>net revenue retention with Premium</span></div><div class="fc flt d2"><b>$22,500</b><span>buys a two-month head start</span></div></div>
+</div>
+<h3 class="gh">The case I was given</h3>
+<div class="box"><p><strong>Brightwell Learning</strong> is a Boston company selling an online training platform to hospitals and clinics. <strong>Standard</strong> costs US$96 per user a year. <strong>Premium</strong> costs US$150 and adds compliance certificate tracking, automatic reports for regulators, single sign-on and advanced analytics.</p>
+<p><strong>Cedar Valley Health</strong> runs 14 hospitals in Ohio with 3,600 clinical staff. A customer since 2024, it pays for 2,500 Standard users (US$240,000 a year). The contract renews on 1 March 2027 and its 2027 budget is set by 15 December 2026.</p>
+<p>Earlier, the account executive emailed finance a Premium quote for all 2,500 users and the VP Finance declined in one line. Now Cedar Valley is taking over two more hospitals in January 2027, adding 1,400 staff who must all complete the same training by June 2027.</p></div>
+<div class="bgrid">
+<div class="bg2"><b>99%</b><span>2,480 of 2,500 users active in 30 days</span></div>
+<div class="bg2"><b>1,100</b><span>clinical staff without a licence</span></div>
+<div class="bg2"><b>46</b><span>tickets asking for Premium features in 6 months</span></div>
+<div class="bg2"><b>88/100</b><span>account health score</span></div>
+<div class="bg2"><b>3</b><span>full-time coordinators checking records by hand, about $65,000 each</span></div>
+<div class="bg2"><b>2</b><span>accreditation findings, both incomplete training records</span></div>
+</div>
+<div class="box"><h3>The details that mattered</h3><ul><li>Compliance records are exported to Excel every Friday and checked line by line.</li><li>Every login needs a separate password, because Standard has no single sign-on.</li><li>Cedar Valley has built 340 custom courses.</li><li>The next accreditation survey is expected in the second half of 2027. More gaps would become a formal action plan.</li><li>The Director of Customer Success wanted the account to grow, but not with another cold quote: finance had to hear a business case.</li></ul></div>
+<div class="box"><h3>My brief</h3><p>Grow the Cedar Valley account. Show which upsell I recommend, the business case in Cedar Valley’s own numbers, who I would take it to and in what order, and when.</p><p style="font-size:.82rem;color:var(--muted)">The companies, people and figures in this case are invented for training.</p></div>
+
+<h3 class="gh">What I found</h3>
+<div class="bgrid">
+<div class="bg2 flt"><b>Logins ≠ completion</b><span>A 99% login rate proves people use the product. It does not prove completion, outcomes or renewal.</span></div>
+<div class="bg2 flt d1"><b>Headcount ≠ seats</b><span>5,000 is everyone on payroll, not a purchase order. Seats to quote = E + N − R (approved existing + approved incoming − reusable).</span></div>
+<div class="bg2 flt d2"><b>Hours ≠ cash</b><span>Freed coordinator time is worth about $48,750 a year, a third of the $135,000 uplift. Premium is paid for by records and compliance, not time saved.</span></div>
+</div>
+
+<h3 class="gh">My recommendation</h3>
+<div class="box"><p><strong>Upgrade the 2,500 existing seats to Premium on 1 January 2027, and expand only on the roster.</strong> The risk is not the $135,000 upgrade. It is the $240,000 renewal, and 1,100 staff without a licence is where that renewal is exposed.</p></div>
+<div class="bgrid">
+<div class="bg2 flt"><b>$375,000</b><span>ARR after upgrade (from $240,000)</span></div>
+<div class="bg2 flt d1"><b>$54</b><span>more per seat, per year</span></div>
+<div class="bg2 flt d2"><b>$22,500</b><span>2,500 × $54 × 2 ÷ 12 for January–February</span></div>
+<div class="bg2 flt d3"><b>+6.25 pts</b><span>NRR for each 100 verified Premium seats</span></div>
+</div>
+<div class="box"><h3>Why 1 January, and why not 5,000 seats</h3><ul><li>Waiting until March saves $22,500 but leaves three months, not five, to train 1,400 nurses by June.</li><li>$750,000 for all 5,000 assumes every employee needs Premium. That is headcount, not demand, and quoting before the roster repeats the 2026 mistake.</li></ul></div>
+
+<h3 class="gh">Four problems, four fixes</h3><div class="steps"><div class="st"><i>PROBLEM 1 · 1,400 NURSES BY JUNE</i><h4>A role-based seat plan</h4><p>Seats are quoted from the training roster, by hospital, role and required course, not from headcount.</p></div><div class="st"><i>PROBLEM 2 · TWO RECORD GAPS</i><h4>Evidence Lisa can retrieve</h4><p>Certificates carry the fields she needs, and a weekly exception log surfaces gaps.</p></div><div class="st"><i>PROBLEM 3 · THE FRIDAY EXPORT</i><h4>Automate it, or prove Premium does</h4><p>The same fields arrive from the system instead of being rebuilt by hand each week.</p></div><div class="st"><i>PROBLEM 4 · UNUSED SEATS</i><h4>Quote verified seats only</h4><p>Approved existing plus approved incoming, minus reusable. Standard stays where Premium fails.</p></div></div><h3 class="gh">Who I take it to, in order</h3><div class="steps"><div class="st"><i>STEP 1 · VP Finance</i><h4>Mark Delaney</h4><p>Confirm the budget ceiling and ROI threshold. He signs.</p></div><div class="st"><i>STEP 2 · Chief Nursing Officer</i><h4>Dr Angela Ruiz</h4><p>Which roles need training, and by when? Will she sponsor?</p></div><div class="st"><i>STEP 3 · L&D Director · champion</i><h4>Kevin O’Brien</h4><p>Map the workflow, manual effort and acceptance tests.</p></div><div class="st"><i>STEP 4 · Compliance Manager</i><h4>Lisa Moreno</h4><p>What caused the two gaps? What must a record prove?</p></div></div><h3 class="gh">When: November to renewal</h3><div class="steps"><div class="st"><i>NOVEMBER 2026</i><h4>Discover</h4><p>Mark wants a business case, not a price. Angela confirms the 1,400 joiners and the June deadline.</p></div><div class="st"><i>18–27 NOVEMBER</i><h4>Validate</h4><p>Segment roles by hospital. Test Premium against today’s export and Lisa’s record fields. Confirm tier and proration terms.</p></div><div class="st"><i>28 NOV–5 DEC</i><h4>Quote</h4><p>Price from the roster: existing plus incoming, less reusable.</p></div><div class="st"><i>BY 15 DECEMBER</i><h4>Decide</h4><p>Mark sets the budget and conditions. Signatory and paper path confirmed.</p></div><div class="st"><i>JANUARY–FEBRUARY</i><h4>Onboard</h4><p>Provision approved users, nurses first. Track completion by cohort, log exceptions weekly.</p></div><div class="st"><i>1 MARCH · JUNE</i><h4>Renew, then prove</h4><p>Sign at $375,000 ARR. QBR in March on realised value. Nurse training complete by June.</p></div></div>
+
+<h3 class="gh">How I would measure it</h3>
+<div class="box"><ul><li><strong>Access:</strong> 100% of approved seats provisioned by the end of January.</li><li><strong>Adoption:</strong> 1,400 joiners active and trained by June, with logins never counted as completion.</li><li><strong>Time to value:</strong> first required course completed within two weeks of assignment.</li><li><strong>Records:</strong> a complete record in one export, with the standard signed off by Compliance before go-live.</li><li><strong>Revenue:</strong> $375,000 ARR signed at renewal on 1 March.</li></ul>
+<p><strong>Triggers I watch:</strong> if fewer than 1,000 of the 1,400 joiners need training, expansion stops at 2,500. If the June checkpoint slips, expansion pauses and Standard stays. If records can’t be pulled in one export by March, I escalate before renewal.</p></div>
+<div class="box"><h3>Risks I planned for</h3><p>Quoting on headcount, tier or proration terms missing from the contract, Premium missing the reporting need, an overstated ROI, procurement stalling before 15 December, approved users not activated by June, and healthy usage being mistaken for renewal intent. Each has a safeguard and a named owner.</p></div>
+<div class="app" style="margin-top:34px"><a class="go" href="https://brigtwed.netlify.app/" target="_blank" rel="noopener">See it working: launch the live app →</a></div>
+<p><a class="btn s" href="#projects">← Back to projects</a></p>
 </section>
 
 <section class="view bk" data-view="bukkibooks">
@@ -334,6 +489,11 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 30px}
 </div>
 <h3 class="grp">Core skills</h3>
 <div class="chips b"><span>Customer Onboarding</span><span>Client Relationship Management</span><span>Customer Journey Coordination</span><span>Needs Assessment</span><span>Complaint Handling &amp; Escalation</span><span>Stakeholder Coordination</span><span>Process Improvement &amp; SOPs</span><span>Customer Education</span><span>Remote Client Support</span></div>
+<h3 class="grp">Things I’ve built</h3>
+<div class="showcase">
+<a class="vk flt" href="https://www.vikanns.com" target="_blank" rel="noopener"><span class="tag">Website I built</span><b>www.Vikanns.com</b><span>The website I built for Vikanns, where I work as Customer Retention Manager.</span><em>Visit the website →</em></a>
+<a class="vk flt d1" href="https://brigtwed.netlify.app/" target="_blank" rel="noopener"><span class="tag">Live app I built</span><b>Brightwell Premium Plan Simulation</b><span>Let me walk you through the live app I built to solve a case study.</span><em>Launch the live app →</em></a>
+</div>
 <div class="contact"><h3>Let’s talk</h3><p>Open to Customer Success, Client Onboarding and Customer Experience roles.</p>
 <a class="btn" href="mailto:annawoke100@gmail.com">annawoke100@gmail.com</a><a class="btn" href="https://linkedin.com/in/awoke-annastasia" target="_blank" rel="noopener">LinkedIn</a></div>
 </section>
@@ -355,7 +515,12 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 30px}
 <section class="view" data-view="tools">
 <h2 class="pg">Tools</h2>
 <p class="sub">Platforms I use to keep customers informed and work organised.</p>
-<h3 class="grp" style="margin-top:0">CRM &amp; customer support</h3>
+<h3 class="grp" style="margin-top:0">What I build and ship with</h3>
+<div class="tools3"><div class="tl flt "><svg viewBox="0 0 24 24" role="img" aria-label="Supabase" fill="#3FCF8E"><path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z"/></svg><b>Supabase</b></div><div class="tl flt d1"><svg viewBox="0 0 24 24" role="img" aria-label="Netlify" fill="#00C7B7"><path d="M6.49 19.04h-.23L5.13 17.9v-.23l1.73-1.71h1.2l.15.15v1.2L6.5 19.04ZM5.13 6.31V6.1l1.13-1.13h.23L8.2 6.68v1.2l-.15.15h-1.2L5.13 6.31Zm9.96 9.09h-1.65l-.14-.13v-3.83c0-.68-.27-1.2-1.1-1.23-.42 0-.9 0-1.43.02l-.07.08v4.96l-.14.14H8.9l-.13-.14V8.73l.13-.14h3.7a2.6 2.6 0 0 1 2.61 2.6v4.08l-.13.14Zm-8.37-2.44H.14L0 12.82v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14Zm17.14 0h-6.58l-.14-.14v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14ZM11.05 6.55V1.64l.14-.14h1.65l.14.14v4.9l-.14.14h-1.65l-.14-.13Zm0 15.81v-4.9l.14-.14h1.65l.14.13v4.91l-.14.14h-1.65l-.14-.14Z"/></svg><b>Netlify</b></div><div class="tl flt d2"><svg viewBox="0 0 24 24" role="img" aria-label="GitHub" fill="currentColor" style="color:var(--text)"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><b>GitHub</b></div><div class="tl flt d3"><svg viewBox="0 0 24 24" role="img" aria-label="Google Cloud" fill="#4285F4"><path d="M12.19 2.38a9.344 9.344 0 0 0-9.234 6.893c.053-.02-.055.013 0 0-3.875 2.551-3.922 8.11-.247 10.941l.006-.007-.007.03a6.717 6.717 0 0 0 4.077 1.356h5.173l.03.03h5.192c6.687.053 9.376-8.605 3.835-12.35a9.365 9.365 0 0 0-2.821-4.552l-.043.043.006-.05A9.344 9.344 0 0 0 12.19 2.38zm-.358 4.146c1.244-.04 2.518.368 3.486 1.15a5.186 5.186 0 0 1 1.862 4.078v.518c3.53-.07 3.53 5.262 0 5.193h-5.193l-.008.009v-.04H6.785a2.59 2.59 0 0 1-1.067-.23h.001a2.597 2.597 0 1 1 3.437-3.437l3.013-3.012A6.747 6.747 0 0 0 8.11 8.24c.018-.01.04-.026.054-.023a5.186 5.186 0 0 1 3.67-1.69z"/></svg><b>Google Cloud</b></div></div>
+<h3 class="grp">What I run customer success with</h3>
+<div class="tools3"><div class="tl flt d1"><svg viewBox="0 0 24 24" role="img" aria-label="HubSpot" fill="#FF7A59"><path d="M18.164 7.93V5.084a2.198 2.198 0 001.267-1.978v-.067A2.2 2.2 0 0017.238.845h-.067a2.2 2.2 0 00-2.193 2.193v.067a2.196 2.196 0 001.252 1.973l.013.006v2.852a6.22 6.22 0 00-2.969 1.31l.012-.01-7.828-6.095A2.497 2.497 0 104.3 4.656l-.012.006 7.697 5.991a6.176 6.176 0 00-1.038 3.446c0 1.343.425 2.588 1.147 3.607l-.013-.02-2.342 2.343a1.968 1.968 0 00-.58-.095h-.002a2.033 2.033 0 102.033 2.033 1.978 1.978 0 00-.1-.595l.005.014 2.317-2.317a6.247 6.247 0 104.782-11.134l-.036-.005zm-.964 9.378a3.206 3.206 0 113.215-3.207v.002a3.206 3.206 0 01-3.207 3.207z"/></svg><b>HubSpot</b></div><div class="tl flt d2"><svg viewBox="0 0 24 24" role="img" aria-label="Zendesk" fill="currentColor" style="color:var(--text)"><path d="M12.914 2.904V16.29L24 2.905H12.914zM0 2.906C0 5.966 2.483 8.45 5.543 8.45s5.542-2.484 5.543-5.544H0zm11.086 4.807L0 21.096h11.086V7.713zm7.37 7.84c-3.063 0-5.542 2.48-5.542 5.543H24c0-3.06-2.48-5.543-5.543-5.543z"/></svg><b>Zendesk</b></div><div class="tl flt d3"><svg viewBox="0 0 24 24" role="img" aria-label="Trello" fill="#0052CC"><path d="M21.147 0H2.853A2.86 2.86 0 000 2.853v18.294A2.86 2.86 0 002.853 24h18.294A2.86 2.86 0 0024 21.147V2.853A2.86 2.86 0 0021.147 0zM10.34 17.287a.953.953 0 01-.953.953h-4a.954.954 0 01-.954-.953V5.38a.953.953 0 01.954-.953h4a.954.954 0 01.953.953zm9.233-5.467a.944.944 0 01-.953.947h-4a.947.947 0 01-.953-.947V5.38a.953.953 0 01.953-.953h4a.954.954 0 01.953.953z"/></svg><b>Trello</b></div></div>
+<h3 class="grp">Everyday tools</h3>
+<h3 class="grp" style="margin-top:0;font-size:.95rem;color:var(--muted)">CRM &amp; customer support</h3>
 <div class="chips b"><span>HubSpot</span><span>Zendesk</span><span>Freshdesk</span></div>
 <h3 class="grp">Project &amp; workflow management</h3>
 <div class="chips b"><span>ClickUp</span><span>Trello</span><span>Notion</span></div>
@@ -385,12 +550,13 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 30px}
       v.classList.toggle('show',on);
     });
     if(!found){h='home';document.querySelector('[data-view="home"]').classList.add('show');}
-    var hh=(h==='bukkibooks')?'projects':h;links.forEach(function(a){a.classList.toggle('on',a.getAttribute('data-v')===hh);});
+    var hh=(h==='bukkibooks'||h==='brightwell')?'projects':h;links.forEach(function(a){a.classList.toggle('on',a.getAttribute('data-v')===hh);});
     window.scrollTo(0,0);
   }
   window.addEventListener('hashchange',show);
   show();
 })();
 </script>
+<script>function loadApp(b){var c=document.getElementById("pvbox");c.innerHTML='<iframe src="https://brigtwed.netlify.app/" title="Brightwell Premium Plan Simulation" style="width:100%;height:420px;border:0;border-radius:10px"></iframe><p style="font-size:.78rem;color:#7d5563;margin:8px 0 0">If the preview stays blank, tap Launch the live app below.</p>'}</script>
 </body>
 </html>
